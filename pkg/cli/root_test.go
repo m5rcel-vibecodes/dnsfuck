@@ -7,10 +7,10 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/miekg/dns"
 	"github.com/m5rcel-vibecodes/dnsfuck/pkg/cli"
 	"github.com/m5rcel-vibecodes/dnsfuck/pkg/output"
 	"github.com/m5rcel-vibecodes/dnsfuck/testutil"
+	"github.com/miekg/dns"
 )
 
 func TestCLI_DiagnosticJSON(t *testing.T) {

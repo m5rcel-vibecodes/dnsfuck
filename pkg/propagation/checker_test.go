@@ -6,10 +6,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/miekg/dns"
 	"github.com/m5rcel-vibecodes/dnsfuck/pkg/propagation"
 	"github.com/m5rcel-vibecodes/dnsfuck/pkg/resolver"
 	"github.com/m5rcel-vibecodes/dnsfuck/testutil"
+	"github.com/miekg/dns"
 )
 
 func TestPropagation_Consensus(t *testing.T) {

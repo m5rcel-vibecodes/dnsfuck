@@ -6,9 +6,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/miekg/dns"
 	"github.com/m5rcel-vibecodes/dnsfuck/pkg/records"
 	"github.com/m5rcel-vibecodes/dnsfuck/pkg/resolver"
+	"github.com/miekg/dns"
 )
 
 // Diagnose inspects the DNSSEC status of a domain.

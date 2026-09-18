@@ -4,8 +4,8 @@ import (
 	"net"
 	"testing"
 
-	"github.com/miekg/dns"
 	"github.com/m5rcel-vibecodes/dnsfuck/pkg/records"
+	"github.com/miekg/dns"
 )
 
 func TestParseRR_AllTypes(t *testing.T) {

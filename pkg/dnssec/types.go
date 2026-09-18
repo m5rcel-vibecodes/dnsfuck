@@ -49,19 +49,19 @@ type RRSIGInfo struct {
 
 // DiagnosticResult contains the full DNSSEC analysis.
 type DiagnosticResult struct {
-	Domain             string           `json:"domain"`
-	Status             Status           `json:"status"`
-	Summary            string           `json:"summary"`
-	HasDNSKEY          bool             `json:"has_dnskey"`
-	HasDS              bool             `json:"has_ds"`
-	HasRRSIG           bool             `json:"has_rrsig"`
-	ResolverAD         bool             `json:"resolver_ad"`           // Resolver returned AD flag
-	ValidatingResolverAD bool           `json:"validating_resolver_ad"` // Validating public resolver returned AD flag
-	ValidationNote     string           `json:"validation_note"`
-	Keys               []KeyInfo        `json:"keys,omitempty"`
-	DSRecords          []DSInfo         `json:"ds_records,omitempty"`
-	Signatures         []RRSIGInfo      `json:"signatures,omitempty"`
-	RawRecords         []records.Record `json:"raw_records,omitempty"`
-	Errors             []string         `json:"errors,omitempty"`
-	Duration           time.Duration    `json:"duration_ns"`
+	Domain               string           `json:"domain"`
+	Status               Status           `json:"status"`
+	Summary              string           `json:"summary"`
+	HasDNSKEY            bool             `json:"has_dnskey"`
+	HasDS                bool             `json:"has_ds"`
+	HasRRSIG             bool             `json:"has_rrsig"`
+	ResolverAD           bool             `json:"resolver_ad"`            // Resolver returned AD flag
+	ValidatingResolverAD bool             `json:"validating_resolver_ad"` // Validating public resolver returned AD flag
+	ValidationNote       string           `json:"validation_note"`
+	Keys                 []KeyInfo        `json:"keys,omitempty"`
+	DSRecords            []DSInfo         `json:"ds_records,omitempty"`
+	Signatures           []RRSIGInfo      `json:"signatures,omitempty"`
+	RawRecords           []records.Record `json:"raw_records,omitempty"`
+	Errors               []string         `json:"errors,omitempty"`
+	Duration             time.Duration    `json:"duration_ns"`
 }

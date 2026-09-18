@@ -37,10 +37,10 @@ type DiagnosticReport struct {
 
 // ComparisonReport represents multi-resolver comparison data in JSON.
 type ComparisonReport struct {
-	Domain       string                 `json:"domain"`
-	Type         string                 `json:"type"`
-	Discrepancy  bool                   `json:"discrepancy"`
-	Results      []resolver.QueryResult `json:"results"`
+	Domain      string                 `json:"domain"`
+	Type        string                 `json:"type"`
+	Discrepancy bool                   `json:"discrepancy"`
+	Results     []resolver.QueryResult `json:"results"`
 }
 
 // PrintJSON writes indented JSON to writer.

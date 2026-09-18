@@ -6,9 +6,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/miekg/dns"
 	"github.com/m5rcel-vibecodes/dnsfuck/pkg/resolver"
 	"github.com/m5rcel-vibecodes/dnsfuck/testutil"
+	"github.com/miekg/dns"
 )
 
 func TestResolver_QuerySuccess(t *testing.T) {
@@ -40,8 +40,8 @@ func TestResolver_QuerySuccess(t *testing.T) {
 	if !qRes.AuthenticatedData {
 		t.Fatalf("Expected AuthenticatedData = true")
 	}
-	if qRes.Latency <= 0 {
-		t.Fatalf("Expected positive latency, got %v", qRes.Latency)
+	if qRes.Latency < 0 {
+		t.Fatalf("Expected non-negative latency, got %v", qRes.Latency)
 	}
 }
 

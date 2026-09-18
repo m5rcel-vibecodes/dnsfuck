@@ -8,12 +8,12 @@ import (
 	"sync"
 	"time"
 
-	"github.com/miekg/dns"
 	"github.com/m5rcel-vibecodes/dnsfuck/pkg/dnssec"
 	"github.com/m5rcel-vibecodes/dnsfuck/pkg/formatting"
 	"github.com/m5rcel-vibecodes/dnsfuck/pkg/output"
 	"github.com/m5rcel-vibecodes/dnsfuck/pkg/records"
 	"github.com/m5rcel-vibecodes/dnsfuck/pkg/resolver"
+	"github.com/miekg/dns"
 )
 
 func runDiagnostic(ctx context.Context, w io.Writer, domain string, types []string, r resolver.Resolver, isCustomResolver bool, jsonOutput bool, shortOutput bool) error {

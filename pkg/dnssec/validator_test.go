@@ -4,10 +4,10 @@ import (
 	"context"
 	"testing"
 
-	"github.com/miekg/dns"
 	"github.com/m5rcel-vibecodes/dnsfuck/pkg/dnssec"
 	"github.com/m5rcel-vibecodes/dnsfuck/pkg/resolver"
 	"github.com/m5rcel-vibecodes/dnsfuck/testutil"
+	"github.com/miekg/dns"
 )
 
 func TestDNSSEC_Unsigned(t *testing.T) {

@@ -11,10 +11,10 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/spf13/cobra"
 	"github.com/m5rcel-vibecodes/dnsfuck/pkg/formatting"
 	"github.com/m5rcel-vibecodes/dnsfuck/pkg/records"
 	"github.com/m5rcel-vibecodes/dnsfuck/pkg/resolver"
+	"github.com/spf13/cobra"
 )
 
 var (

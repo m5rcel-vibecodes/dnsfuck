@@ -6,9 +6,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/miekg/dns"
 	"github.com/m5rcel-vibecodes/dnsfuck/pkg/trace"
 	"github.com/m5rcel-vibecodes/dnsfuck/testutil"
+	"github.com/miekg/dns"
 )
 
 func TestRootHints_Presence(t *testing.T) {

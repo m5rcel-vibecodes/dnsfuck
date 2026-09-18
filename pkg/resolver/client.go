@@ -7,8 +7,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/miekg/dns"
 	"github.com/m5rcel-vibecodes/dnsfuck/pkg/records"
+	"github.com/miekg/dns"
 )
 
 // DefaultTimeout is the standard DNS query timeout.
