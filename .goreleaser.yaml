@@ -1,0 +1,51 @@
+version: 2
+
+project_name: dnsfuck
+
+before:
+  hooks:
+    - go mod tidy
+    - go test ./...
+
+builds:
+  - id: dnsfuck
+    main: ./cmd/dnsfuck
+    binary: dnsfuck
+    env:
+      - CGO_ENABLED=0
+    goos:
+      - darwin
+      - linux
+      - windows
+    goarch:
+      - amd64
+      - arm64
+    ldflags:
+      - -s -w
+      - -X github.com/m5rcel-vibecodes/dnsfuck/pkg/cli.Version={{.Version}}
+      - -X github.com/m5rcel-vibecodes/dnsfuck/pkg/cli.Commit={{.ShortCommit}}
+      - -X github.com/m5rcel-vibecodes/dnsfuck/pkg/cli.BuildDate={{.Date}}
+
+archives:
+  - id: default
+    format: tar.gz
+    name_template: "{{ .ProjectName }}_{{ .Version }}_{{ .Os }}_{{ .Arch }}"
+    format_overrides:
+      - goos: windows
+        format: zip
+    files:
+      - README.md
+      - LICENSE*
+
+checksum:
+  name_template: "checksums.txt"
+
+snapshot:
+  version_template: "{{ incpatch .Version }}-next"
+
+changelog:
+  sort: asc
+  filters:
+    exclude:
+      - '^docs:'
+      - '^test:'
