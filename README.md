@@ -12,8 +12,8 @@
 
 **A production-ready, no-bullshit DNS diagnostic and troubleshooting CLI utility.**
 
-[![CI](https://github.com/m5rcel-vibecodes/dnsfuck/actions/workflows/ci.yml/badge.svg)](https://github.com/m5rcel-vibecodes/dnsfuck/actions/workflows/ci.yml)
-[![Go Report Card](https://goreportcard.com/badge/github.com/m5rcel-vibecodes/dnsfuck)](https://goreportcard.com/report/github.com/m5rcel-vibecodes/dnsfuck)
+[![CI](https://github.com/m5rcel-vibecodes/dnsfuck/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/m5rcel-vibecodes/dnsfuck/actions/workflows/ci.yml)
+[![Go Version](https://img.shields.io/github/go-mod/go-version/m5rcel-vibecodes/dnsfuck?logo=go&logoColor=white)](go.mod)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Release](https://img.shields.io/github/v/release/m5rcel-vibecodes/dnsfuck)](https://github.com/m5rcel-vibecodes/dnsfuck/releases)
 
